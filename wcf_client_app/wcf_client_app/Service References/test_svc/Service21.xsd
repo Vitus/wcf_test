@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/wcf_host.models.V2" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/wcf_host.models.V2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TierRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InstanceId" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TierRequest" nillable="true" type="tns:TierRequest" />
+  <xs:complexType name="AnotherWorkRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyId" type="xs:short" />
+      <xs:element minOccurs="0" name="InstanceId" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AnotherWorkRequest" nillable="true" type="tns:AnotherWorkRequest" />
+  <xs:complexType name="DifferentFormatRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InstanceId" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DifferentFormatRequest" nillable="true" type="tns:DifferentFormatRequest" />
+</xs:schema>
